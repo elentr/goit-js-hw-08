@@ -1,0 +1,61 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    display: block;
+    cursor: pointer;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1440px;
+    padding: 24px;
+}
+
+.gallery-item{
+    max-width: 360px;
+    height: 100%;
+    transition: transform 250ms ease-in-out;
+}
+
+.gallery-item:hover{
+    transform: scale(1.05);
+    /* max-width: 376px;*/
+}
+
+.gallery-image{
+    width: 100%;
+    height: 100%;
+}
+
+/* ---MODAL WINDOW--- */
+.basicLightbox .modal-caption {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 16px 0 0;
+    padding: 0 16px;
+}
+
+@media screen and (max-width: 1110px) {
+    .basicLightbox .modal-content img {
+        max-width: 90vw;
+        max-height: 90vh;
+        width: auto;
+        height: auto;
+    }
+}
